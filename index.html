@@ -3,11 +3,11 @@
   <head>
     <title>Google</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <nav>
+    <nav class="nav">
       <ul class="nav-container">
         <li class="nav-element">
           <a href="#">Gmail</a>
@@ -20,10 +20,13 @@
             <img src="./img/3x3dotgrid.png" width="16px" />
           </a>
         </li>
+        <li class="nav-element last-nav">
+          <a href="#" id="signin">Sign in</a>
+        </li>
       </ul>
     </nav>
 
-    <main>
+    <main class="content">
       <form class="search-container">
         <img
           src="./img/google_logo.png"
@@ -33,17 +36,19 @@
 
         <input type="text" name="search" class="search-element search-box" />
 
-        <button class="search-element search-button" type="button">
-          Google Search
-        </button>
+        <div class="search-element buttons">
+          <button class="buttons-element search-button" type="button">
+            Google Search
+          </button>
 
-        <button class="search-element lucky-button" type="button">
-          I'm Feeling Lucky
-        </button>
+          <button class="buttons-element lucky-button" type="button">
+            I'm Feeling Lucky
+          </button>
+        </div>
       </form>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-element footer-left-container">
           <a href="#" class="footer-left-element">Advertising</a>
@@ -55,7 +60,7 @@
         <div class="footer-element footer-right-container">
           <a href="#" class="footer-right-element">Privacy</a>
           <a href="#" class="footer-right-element">Terms</a>
-          <a href="#" class="footer-right-element">Settings</a>
+          <a href="#" class="footer-right-element last-footer">Settings</a>
         </div>
       </div>
     </footer>
